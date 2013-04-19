@@ -30,27 +30,41 @@ lastSlide	切换最后一张图片时，回调函数
 afterLoad	当加载完成时，回调函数
 
 
-
-
-
-
- <script type="text/javascript" src="jquery.nivo.slider.pack.js"></script>
+ 
+ 
+ 
+    <script type="text/javascript" src="jquery.nivo.slider.pack.js"></script>
     <script type="text/javascript">
     $(window).load(function() {
+	
         $('#slider').nivoSlider({
+		
                 effect:'random', //图片切换效果。提供了11种效果：'sliceDownRight','sliceDownLeft','sliceUpRight','sliceUpLeft', 'sliceUpDown','sliceUpDownLeft', 'fold','fade','slideInRight','slideInLeft'，诸如渐入渐出，滑动，百叶窗等等都有。
-  			animSpeed:300,
+				
+				animSpeed:300,
+				
 				pauseTime:1500,
+				
 				directionNav:true,//是否使用导航控制条，
+				
 				controlNavThumbs:true,//是否使用缩略图控制导航
+				
 				controlNavThumbsFromRel:true,
+				
 				pauseOnHover:true,//当鼠标滑向图片时，停止切换
+				
 				manualAdvance:false,//	是否不自动切换，当为true时，需要手动切换
+				
 				captionOpacity:0.7,//	设置图片标题说明的背景透明度	0.8
+				
 				//beforeChange	当发生切换前，回调函数	 
+				
 				//afterChange	当发生切换后，回调函数	 
-				//slideshowEnd	完成所有的切换动作后，回调函数	 
+				
+				//slideshowEnd	完成所有的切换动作后，回调函数	
+				
 				//lastSlide	切换最后一张图片时，回调函数	 
+				
 				//afterLoad	当加载完成时，回调函数				
 		});		 
     });
